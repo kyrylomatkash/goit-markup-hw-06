@@ -259,7 +259,7 @@ nav > a {
 .hero {
   background-color: var(--dark);
   background: linear-gradient(to bottom, var(--bg-color), var(--bg-color)),
-    url(../images/hero/hero-background-image.jpg);
+    url(../images/adaptive-images/hero/hero-background-image.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -311,7 +311,7 @@ nav > a {
 }
 
 .features-list {
-  gap: 24px;
+  gap: 72px 24px;
 }
 
 .features-icon {
@@ -362,11 +362,6 @@ nav > a {
 /* Team styles  */
 .team {
   background-color: var(--light);
-}
-
-.team .container {
-  display: flex;
-  flex-direction: column;
 }
 
 .team-gallery {
@@ -435,21 +430,26 @@ nav > a {
 
 /* Customers styles  */
 .customers .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
 }
 
 .customers-title {
   margin-bottom: 72px;
+  font-size: 36px;
   line-height: 1.11;
+  text-align: center;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--dark);
 }
 
 .customers-list {
+  display: flex;
   gap: 24px;
 }
 
 .customers-item {
+  width: calc((100% - 120px) / 6);
   height: 88px;
 }
 
@@ -458,7 +458,7 @@ nav > a {
   height: 100%;
   border: 1px solid var(--subtitle-text);
   border-radius: 4px;
-  padding: 16px 32px;
+
   display: flex;
   align-items: center;
   justify-content: center;

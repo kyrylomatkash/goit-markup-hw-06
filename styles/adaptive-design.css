@@ -1,7 +1,7 @@
 @media (min-resolution: 192dpi), (min-device-pixel-ratio: 2) {
   .hero {
     background: linear-gradient(to bottom, var(--bg-color), var(--bg-color)),
-      url(../images/hero/hero-background-image2x.jpg);
+      url(../images/adaptive-images/hero/hero-background-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -18,7 +18,13 @@
     width: 100%;
     padding: 0 16px;
   }
-
+  .hero {
+    background: linear-gradient(to bottom, var(--bg-color), var(--bg-color)),
+      url(../images/adaptive-images/hero/hero-background-image@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   main {
     padding-top: 70px;
   }
@@ -215,7 +221,13 @@
   .section {
     padding: 96px 0;
   }
-
+  .hero {
+    background: linear-gradient(to bottom, var(--bg-color), var(--bg-color)),
+      url(../images/adaptive-images/hero/hero-background-image@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
   .container {
     width: 428px;
   }
@@ -275,7 +287,6 @@
   }
 
   .team-item {
-    width: 264px;
     margin: 0 auto;
   }
 
@@ -401,6 +412,13 @@
     width: 766px;
     padding: 0 15px;
   }
+  .hero {
+    background: linear-gradient(to bottom, var(--bg-color), var(--bg-color)),
+      url(../images/adaptive-images/hero/hero-background-image@2x.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
 
   .section {
     padding: 96px 0;
@@ -421,6 +439,7 @@
   }
 
   .address-item > .contacts-link {
+    font-size: 16px;
     padding: 0;
   }
 
@@ -492,7 +511,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: 72px 24px;
-    max-width: 552px;
+    max-width: 582px;
   }
 
   .footer .footer-link,

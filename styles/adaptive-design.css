@@ -505,6 +505,7 @@
 
   .customers-item {
     width: calc((100% - 48px) / 3);
+    align-items: center;
   }
 
   .footer .container {
@@ -554,7 +555,7 @@
     display: none;
   }
 
-  .humb-icon {
+  .thumb-icon {
     stroke: var(--dark);
   }
 

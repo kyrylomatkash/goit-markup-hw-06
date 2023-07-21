@@ -439,7 +439,7 @@
   }
 
   .address-item > .contacts-link {
-    font-size: 16px;
+    font-size: 12px;
     padding: 0;
   }
 
@@ -496,10 +496,12 @@
   .team-item {
     width: auto;
   }
+  .customers .container {
+    max-width: 582px;
+  }
 
   .customers-list {
     flex-wrap: wrap;
-    width: 552px;
     gap: 72px 24px;
   }
 

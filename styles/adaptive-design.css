@@ -221,12 +221,7 @@
   .section {
     padding: 96px 0;
   }
-  .hero {
-    background: linear-gradient(to bottom, var(--bg-color), var(--bg-color)),
-      url(../images/adaptive-images/hero/hero-background-image@1x.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  
   }
   .container {
     width: 428px;
@@ -414,7 +409,7 @@
   }
   .hero {
     background: linear-gradient(to bottom, var(--bg-color), var(--bg-color)),
-      url(../images/adaptive-images/hero/hero-background-image@2x.jpg);
+      url(../images/adaptive-images/hero/hero-background-image.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -444,7 +439,7 @@
   }
 
   .active::after {
-    bottom: -11px;
+    bottom: -4px;
   }
 
   .hero {
@@ -561,3 +556,4 @@
     stroke: var(--dark);
   }
 }
+

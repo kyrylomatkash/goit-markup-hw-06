@@ -126,7 +126,7 @@
     text-align: start;
   }
 
-  .social-block {
+  .social-div {
     margin: 0;
     text-align: center;
   }
@@ -328,7 +328,7 @@
     text-align: start;
   }
 
-  .social-block {
+  .social-div {
     margin: 0;
     text-align: center;
   }
@@ -401,7 +401,7 @@
     display: flex;
   }
 
-  .mobile-social-block > .social-list {
+  .mobile-social-div > .social-list {
     gap: 56px;
   }
 }
@@ -516,7 +516,7 @@
   }
 
   .footer .footer-link,
-  .social-block {
+  .social-div {
     margin: 0;
   }
 
@@ -557,9 +557,5 @@
 
   .thumb-icon {
     stroke: var(--dark);
-  }
-
-  .modal-window {
-    min-height: 0;
   }
 }

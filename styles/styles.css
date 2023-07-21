@@ -841,7 +841,7 @@ nav > a {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 80px 40px 35px;
+  padding: 80px 0 40px 35px;
   width: 100vw;
   height: 100%;
   overflow-y: auto;
@@ -990,7 +990,7 @@ nav > a {
   color: var(--white-background);
 }
 
-.social-block {
+.social-div {
   margin-right: 80px;
 }
 

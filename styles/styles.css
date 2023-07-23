@@ -254,7 +254,7 @@ nav > a {
 /* Hero styles */
 
 .hero {
-  background-color: ;
+  background-color: var(--bg-color);
   padding-top: 188px;
   padding-bottom: 188px;
   background-image: linear-gradient(to bottom, var(--bg-color), var(--bg-color)),

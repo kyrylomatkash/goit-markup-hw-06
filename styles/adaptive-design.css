@@ -518,7 +518,7 @@
   }
 
   .footer .footer-link,
-  .social-div {
+  .social-block {
     margin: 0;
   }
 
@@ -539,6 +539,14 @@
   .footer-email-input {
     width: 264px;
     opacity: 0.3;
+  }
+
+  .portfolio {
+    padding: 96px 0;
+  }
+
+  .portfolio-product {
+    justify-content: flex-start;
   }
 
   .portfolio {

@@ -25,9 +25,6 @@
     background-position: center;
     background-size: cover;
   }
-  main {
-    padding-top: 70px;
-  }
 
   .doing-section {
     display: none;
@@ -230,10 +227,6 @@
   }
   .container {
     width: 428px;
-  }
-
-  main {
-    padding-top: 70px;
   }
 
   .active::after {
@@ -514,17 +507,18 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: 72px 24px;
-    max-width: 582px;
+    width: 584px;
   }
 
   .footer .footer-link,
-  .social-block {
+  .social-div {
     margin: 0;
   }
 
   .footer-link,
   .footer-p {
     text-align: start;
+    max-width: 264px;
   }
 
   .subscribe-form-div {
@@ -540,7 +534,6 @@
     width: 264px;
     opacity: 0.3;
   }
-
   .portfolio {
     padding: 96px 0;
   }
@@ -578,42 +571,42 @@
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/main-mob@2x.jpg);
+      url(../images/adaptive-images/hero/hero-background-image-mob@2x.jpg);
   }
 }
 @media screen and (min-width: 428px) {
-  .hero {
+  .main-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(..//images/adaptive-images/hero/hero-background-image@1x.jpg);
+      url(../images/adaptive-images/hero/hero-background-image-tab@1x.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 428px),
   (min-resolution: 192dpi) and (min-width: 428px),
   (min-resolution: 2dppx) and (min-width: 428px) {
-  .hero {
+  .main-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(..//images/adaptive-images/hero/hero-background-image@1x.jpg);
+      url(../images/adaptive-images/hero/hero-background-image-tab@2x.jpg);
   }
 }
 @media screen and (min-width: 768px) {
-  .hero {
+  .main-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(..//images/adaptive-images/hero/hero-background-image@2x.jpg);
+      url(../images/adaptive-images/hero/hero-background-image@1x.jpg);
   }
 }
 @media (min-device-pixel-ratio: 2) and (min-width: 768px),
   (min-resolution: 192dpi) and (min-width: 768px),
   (min-resolution: 2dppx) and (min-width: 768px) {
-  .hero {
+  .main-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)

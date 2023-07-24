@@ -415,6 +415,8 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 
   .section {

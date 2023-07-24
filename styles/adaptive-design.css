@@ -13,9 +13,9 @@
   .section {
     padding: 96px 0;
   }
-.features-p{
-  font-weight: 500;
-}
+  .features-p {
+    font-weight: 500;
+  }
   .container {
     width: 100%;
     padding: 0 16px;
@@ -265,9 +265,9 @@
   .features-icon {
     display: none;
   }
-.features-p{
-  font-weight: 500;
-}
+  .features-p {
+    font-weight: 500;
+  }
   .features-section-title {
     font-size: 36px;
     font-family: Roboto;
@@ -420,9 +420,9 @@
   .section {
     padding: 96px 0;
   }
-.features-p{
-  font-weight: 500;
-}
+  .features-p {
+    font-weight: 500;
+  }
   .logo-text {
     margin-right: 120px;
   }
@@ -433,13 +433,10 @@
     gap: 12px;
   }
 
-
-
   .address-item > .contacts-link {
     font-size: 12px;
     padding: 0;
   }
-
 
   .hero {
     padding-top: 112px;
@@ -484,7 +481,7 @@
     gap: 64px 24px;
     justify-content: center;
     text-align: center;
-\  }
+  }
 
   .customers .container {
     max-width: 582px;

@@ -265,7 +265,9 @@
   .features-icon {
     display: none;
   }
-
+.features-p{
+  font-weight: 500;
+}
   .features-section-title {
     font-size: 36px;
     font-family: Roboto;
@@ -440,7 +442,8 @@
 
 
   .hero {
-    padding-top: 168px;
+    padding-top: 112px;
+    padding-bottom: 112px;
   }
 
   .section.features {

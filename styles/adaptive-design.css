@@ -13,7 +13,9 @@
   .section {
     padding: 96px 0;
   }
-
+.features-p{
+  font-weight: 500;
+}
   .container {
     width: 100%;
     padding: 0 16px;
@@ -416,7 +418,9 @@
   .section {
     padding: 96px 0;
   }
-
+.features-p{
+  font-weight: 500;
+}
   .logo-text {
     margin-right: 120px;
   }
@@ -427,18 +431,13 @@
     gap: 12px;
   }
 
-  .header .address {
-    padding: 16px 0;
-  }
+
 
   .address-item > .contacts-link {
     font-size: 12px;
     padding: 0;
   }
 
-  .active::after {
-    bottom: -4px;
-  }
 
   .hero {
     padding-top: 168px;
@@ -482,13 +481,8 @@
     gap: 64px 24px;
     justify-content: center;
     text-align: center;
-    width: 552px;
-    margin: 0 auto;
-  }
+\  }
 
-  .team-item {
-    width: auto;
-  }
   .customers .container {
     max-width: 582px;
   }
@@ -507,7 +501,7 @@
     flex-wrap: wrap;
     flex-direction: row;
     gap: 72px 24px;
-    width: 584px;
+    width: 582px;
   }
 
   .footer .footer-link,

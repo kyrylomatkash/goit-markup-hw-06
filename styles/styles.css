@@ -1,17 +1,18 @@
 :root {
-  --primary-brand: #4d5ae5;
+  --primarybrand-color: #4d5ae5;
   --primary-brand-opacity: #4d5ae5b3;
-  --pressed-state: #404bbf;
-  --dark: #2e2f42;
-  --success: #31d0aa;
-  --text: #434455;
-  --subtitle-text: #8e8f99;
-  --accent: #e7e9fc;
-  --light: #f4f4fd;
-  --white-background: #ffffff;
+  --pressedstate-color: #404bbf;
+  --primarydark-color: #2e2f42;
+  --success-color: #31d0aa;
+  --primarybody-color: #434455;
+  --subtitle-text-color: #8e8f99;
+  --accent-color: #e7e9fc;
+  --light-text: #f4f4fd;
+  --white-text: #ffffff;
   --modal-background: #2e2f4266;
   --bg-color: #2e2f42b3;
-  --modal-window-bg: #fcfcfc;
+  --modal-window-background: #fcfcfc;
+  --main-animation: 250s, cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* Base styles  */
 body {
@@ -19,21 +20,21 @@ body {
   font-size: 16px;
   line-height: 24px;
   letter-spacing: 0.02em;
-  background-color: var(--white-background);
-  color: var(--text);
+  background-color: var(--white-text);
+  color: var(--primarybody-color);
 }
 
 h2 {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.02em;
-  color: var(--dark);
+  color: var(--primarydark-color);
 }
 
 h3 {
   font-weight: 500;
   font-size: 20px;
-  color: var(--dark);
+  color: var(--primarydark-color);
   letter-spacing: 0.02em;
   line-height: 1.2;
 }
@@ -99,8 +100,8 @@ button {
   text-align: center;
   border: none;
   border-radius: 4px;
-  background-color: var(--primary-brand);
-  color: var(--white-background);
+  background-color: var(--primarybrand-color);
+  color: var(--white-text);
   font-family: Roboto, sans-serif;
   width: fit-content;
   padding: 16px 32px;
@@ -110,14 +111,14 @@ button {
 
 .button:hover,
 .social-link:hover {
-  background-color: var(--pressed-state);
+  background-color: var(--pressedstate-color);
 }
 
 .button:focus,
 .button:active,
 .social-link:focus,
 .social-link:active {
-  background-color: var(--pressed-state);
+  background-color: var(--pressedstate-color);
 }
 
 .link {
@@ -169,19 +170,19 @@ nav > a {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   line-height: 1.17;
-  color: var(--primary-brand);
+  color: var(--primarybrand-color);
   margin-right: 76px;
 }
 
 .logo-span {
-  color: var(--dark);
+  color: var(--primarydark-color);
 }
 
 .navigation-link {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color: var(--dark);
+  color: var(--primarydark-color);
   letter-spacing: 0.02em;
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -192,12 +193,12 @@ nav > a {
 }
 
 .navigation-link:hover {
-  color: var(--pressed-state);
+  color: var(--pressedstate-color);
 }
 
 .navigation-link:focus,
 .navigation-link:active {
-  color: var(--pressed-state);
+  color: var(--pressedstate-color);
 }
 
 .address {
@@ -211,28 +212,28 @@ nav > a {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  color: var(--text);
+  color: var(--primarybody-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .contacts-link:hover {
-  color: var(--pressed-state);
+  color: var(--pressedstate-color);
 }
 
 .contacts-link:focus,
 .contacts-link:active {
-  color: var(--pressed-state);
+  color: var(--pressedstate-color);
 }
 
 .active {
-  color: var(--pressed-state);
+  color: var(--pressedstate-color);
 }
 
 .active::after {
   width: 100%;
   height: 4px;
   content: "";
-  background-color: var(--pressed-state);
+  background-color: var(--pressedstate-color);
   position: absolute;
   bottom: -1px;
   left: 0;
@@ -261,12 +262,12 @@ nav > a {
   height: 56px;
   border: none;
   border-radius: 4px;
-  background-color: var(--primary-brand);
+  background-color: var(--primarybrand-color);
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
-  color: var(--light);
+  color: var(--light-text);
   cursor: pointer;
   font-size: 16px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
@@ -280,16 +281,16 @@ nav > a {
   line-height: 1.07;
   text-align: center;
   letter-spacing: 0.02em;
-  color: var(--white-background);
+  color: var(--white-text);
 }
 
 .hero-btn:hover {
-  background-color: var(--pressed-state);
+  background-color: var(--pressedstate-color);
 }
 
 .hero-btn:focus,
 .hero-btn:active {
-  background-color: var(--pressed-state);
+  background-color: var(--pressedstate-color);
 }
 
 /* Features styles  */
@@ -311,7 +312,7 @@ nav > a {
 }
 
 .features-icon {
-  background-color: var(--light);
+  background-color: var(--light-text);
   padding: 24px 0;
   text-align: center;
   margin-bottom: 8px;
@@ -332,7 +333,7 @@ nav > a {
   width: calc((100% - 72px) / 4);
 }
 .features-p {
-  color: var(--text);
+  color: var(--primarybody-color);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -365,7 +366,7 @@ nav > a {
 
 /* Team styles  */
 .team {
-  background-color: var(--light);
+  background-color: var(--light-text);
 }
 
 .team-gallery {
@@ -381,7 +382,7 @@ nav > a {
 }
 
 .team-item {
-  background-color: var(--white-background);
+  background-color: var(--white-text);
   align-items: center;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -416,7 +417,7 @@ nav > a {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  background-color: var(--primary-brand);
+  background-color: var(--primarybrand-color);
   position: relative;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -428,7 +429,7 @@ nav > a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  fill: var(--light);
+  fill: var(--light-text);
 }
 
 /* Customers styles  */
@@ -443,7 +444,7 @@ nav > a {
   text-align: center;
   letter-spacing: 0.02em;
   text-transform: capitalize;
-  color: var(--dark);
+  color: var(--primarydark-color);
 }
 
 .customers-list {
@@ -459,13 +460,13 @@ nav > a {
 .customers-link {
   width: 100%;
   height: 100%;
-  border: 1px solid var(--subtitle-text);
+  border: 1px solid var(--subtitle-text-color);
   border-radius: 4px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-  color: var(--subtitle-text);
+  color: var(--subtitle-text-color);
   fill: currentColor;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -477,14 +478,14 @@ nav > a {
 }
 
 .customers-link:hover {
-  border-color: var(--pressed-state);
-  color: var(--pressed-state);
+  border-color: var(--pressedstate-color);
+  color: var(--pressedstate-color);
 }
 
 .customers-link:active,
 .customers-link:focus {
-  border-color: var(--pressed-state);
-  color: var(--pressed-state);
+  border-color: var(--pressedstate-color);
+  color: var(--pressedstate-color);
 }
 
 /* Portfolio section */
@@ -515,8 +516,8 @@ nav > a {
   text-align: center;
   cursor: pointer;
   padding: 12px 24px;
-  color: var(--primary-brand);
-  background-color: var(--light);
+  color: var(--primarybrand-color);
+  background-color: var(--light-text);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -524,8 +525,8 @@ nav > a {
 }
 
 .button-filter:hover {
-  background-color: var(--pressed-state);
-  color: var(--white-background);
+  background-color: var(--pressedstate-color);
+  color: var(--white-text);
   border: 1px solid transparent;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -533,8 +534,8 @@ nav > a {
 
 .button-filter:focus,
 .button-filter:active {
-  background-color: var(--pressed-state);
-  color: var(--white-background);
+  background-color: var(--pressedstate-color);
+  color: var(--white-text);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -547,14 +548,14 @@ nav > a {
 
 .projects-description {
   padding: 32px 16px;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--accent-color);
   border-top: none;
 }
 
 .portfolio-item-title {
   font-weight: 500;
   font-size: 20px;
-  color: var(--dark);
+  color: var(--primarydark-color);
   letter-spacing: 0.02em;
   line-height: 1.2;
   margin-bottom: 8px;
@@ -589,13 +590,13 @@ nav > a {
   left: 0;
   padding: 40px 32px;
   font-size: 16px;
-  background-color: var(--primary-brand);
+  background-color: var(--primarybrand-color);
   width: 100%;
   height: 100%;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   text-align: left;
-  color: var(--light);
+  color: var(--light-text);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
@@ -652,7 +653,7 @@ nav > a {
   padding: 0;
   top: 24px;
   right: 24px;
-  background-color: var(--accent);
+  background-color: var(--accent-color);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   font-size: 0;
@@ -663,28 +664,28 @@ nav > a {
 .icon-modal {
   height: 8px;
   width: 8px;
-  fill: var(--dark);
+  fill: var(--primarydark-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-btn:hover {
-  background-color: var(--pressed-state);
+  background-color: var(--pressedstate-colorcolor);
   border: none;
 }
 
 .modal-btn:active,
 .modal-btn:focus {
-  background-color: var(--pressed-state);
+  background-color: var(--pressedstate-color);
   border: none;
 }
 
 .modal-btn:hover .icon-modal {
-  fill: var(--white-background);
+  fill: var(--white-text);
 }
 
 .modal-btn:active .icon-modal,
 .modal-btn:focus .icon-modal {
-  fill: var(--white-background);
+  fill: var(--white-text);
 }
 
 .form {
@@ -696,7 +697,7 @@ nav > a {
   font-weight: 500;
   text-align: center;
   margin-bottom: 16px;
-  color: var(--dark);
+  color: var(--primarydark-color);
 }
 
 .modal-input-wrap {
@@ -710,7 +711,7 @@ nav > a {
   line-height: 14px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--subtitle-text);
+  color: var(--subtitle-text-color);
 }
 
 .input-block {
@@ -737,17 +738,17 @@ nav > a {
   position: absolute;
   left: 16px;
   top: 50%;
-  fill: var(--dark);
+  fill: var(--primarydark-color);
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .form-item:focus {
-  border-color: var(--primary-brand);
+  border-color: var(--primarybrand-color);
 }
 
 .form-item:focus + .form-icon {
-  fill: var(--primary-brand);
+  fill: var(--primarybrand-color);
 }
 
 .modal-textarea-wrap {
@@ -771,11 +772,11 @@ nav > a {
 }
 
 .form-comment:focus {
-  border-color: var(--primary-brand);
+  border-color: var(--primarybrand-color);
 }
 
 .form-comment .form-comment::placeholder {
-  color: var(--subtitle-text);
+  color: var(--subtitle-text-color);
 }
 
 .checkbox-container {
@@ -791,11 +792,11 @@ nav > a {
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
-  color: var(--subtitle-text);
+  color: var(--subtitle-text-color);
 }
 
 .check-link {
-  color: var(--primary-brand);
+  color: var(--primarybrand-color);
   text-decoration: underline;
 }
 
@@ -815,9 +816,9 @@ nav > a {
 }
 
 .input-check-hidden:checked + .user-confirm-label .check-box {
-  background-color: var(--pressed-state);
+  background-color: var(--pressedstate-color);
   border: none;
-  fill: var(--light);
+  fill: var(--light-text);
 }
 
 .check-link {
@@ -842,7 +843,7 @@ nav > a {
   width: 100vw;
   height: 100%;
   overflow-y: auto;
-  background-color: var(--white-background);
+  background-color: var(--white-text);
   z-index: 999;
   transform: translateX(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -860,7 +861,7 @@ nav > a {
   position: absolute;
   top: 24px;
   right: 24px;
-  border: 1px solid var(--accent);
+  border: 1px solid var(--accent-color);
 }
 
 .mobile-menu {
@@ -898,19 +899,19 @@ nav > a {
 }
 
 .thumb-icon {
-  stroke: var(--dark);
+  stroke: var(--primarydark-color);
   outline: transparent;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .close-btn:hover,
 .close-btn:focus {
-  background-color: var(--pressed-state);
+  background-color: var(--pressedstate-color);
 }
 
 .close-btn:hover .icon-modal,
 .close-btn:focus .icon-modal {
-  fill: var(--white-background);
+  fill: var(--white-text);
 }
 
 .mobile-menu-navigation-link,
@@ -937,7 +938,7 @@ nav > a {
 
 .mobile-contacts-link {
   margin-bottom: 40px;
-  color: var(--primary-brand);
+  color: var(--primarybrand-color);
 }
 
 .mobile-email {
@@ -947,8 +948,8 @@ nav > a {
 }
 /* Footer styles  */
 .footer {
-  color: var(--light);
-  background-color: var(--dark);
+  color: var(--light-text);
+  background-color: var(--primarydark-color);
   padding: 100px 0;
 }
 
@@ -969,7 +970,7 @@ nav > a {
   text-transform: uppercase;
   letter-spacing: 0.03em;
   line-height: 1.17;
-  color: var(--primary-brand);
+  color: var(--primarybrand-color);
   display: inline-block;
 }
 
@@ -979,7 +980,7 @@ nav > a {
 
 .footer-logo,
 .footer-p {
-  color: var(--light);
+  color: var(--light-text);
 }
 
 .footer-p {
@@ -990,7 +991,7 @@ nav > a {
 .footer-title {
   font-weight: 500;
   margin-bottom: 16px;
-  color: var(--white-background);
+  color: var(--white-text);
 }
 
 .social-div {
@@ -1016,12 +1017,12 @@ nav > a {
 }
 
 .footer .social-link:hover {
-  background-color: var(--success);
+  background-color: var(--success-color);
 }
 
 .footer .social-link:active,
 .footer .social-link:focus {
-  background-color: var(--success);
+  background-color: var(--success-color);
 }
 
 .form-subscribe {
@@ -1038,15 +1039,15 @@ nav > a {
   line-height: 1.5;
   letter-spacing: 0.04em;
   outline: transparent;
-  border: 1px solid var(--white-background, #fff);
+  border: 1px solid var(--white-text, #fff);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
-  color: var(--white-background);
+  color: var(--white-text);
   background-color: transparent;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-email-input::placeholder {
-  color: var(--white-background);
+  color: var(--white-text);
 }
 
 .footer-subscribe-btn {

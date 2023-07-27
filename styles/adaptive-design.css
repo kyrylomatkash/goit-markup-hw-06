@@ -555,7 +555,7 @@
   }
 
   .thumb-icon {
-    stroke: var(--dark);
+    stroke: var(--primarydark-color);
   }
 }
 
